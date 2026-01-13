@@ -78,4 +78,4 @@ based on this data, the fastest method is to try docker-compose up directly and 
       - vol-pgdata:/var/lib/postgresql/data
 ```
    
-13. The database should work, if that database work. Then you input the right hostname and port for the question
+13. The database should work, if that database work, it means you input the right hostname and port for the question
