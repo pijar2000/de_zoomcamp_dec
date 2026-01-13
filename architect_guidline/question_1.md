@@ -1,5 +1,7 @@
 # QUESTION 1 Docker Container
 
+### guideline by pijar
+
 1. Introduction.md (https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/01-docker-terraform/docker-sql/01-introduction.md)
 2. Try to understand concept of docker container
 3. Open docker desktop
