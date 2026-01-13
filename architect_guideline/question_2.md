@@ -32,7 +32,7 @@ volumes:
     name: vol-pgadmin_data
 ```
 
-### guidline by pijar
+### Guidleine by pijar for question 2
 - The question is which host and port that postgres use in this setting
 
 we need to know which is our PC port or Docker port, in this case
