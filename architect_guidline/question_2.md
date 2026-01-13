@@ -1,4 +1,4 @@
-## Question 2. Understanding Docker networking and docker-compose
+# Question 2. Understanding Docker networking and docker-compose
 
 ### guidline by pijar
 
