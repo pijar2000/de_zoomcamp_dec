@@ -60,22 +60,23 @@ based on this data, the fastest method is to try docker-compose up directly and 
 10. <img width="1068" height="833" alt="image" src="https://github.com/user-attachments/assets/97c57df7-076c-4346-878f-7d57640a8ca1" />
 
 11. you shoul fill the host based on above setup, according to docker documentation in link above it should be
+
     - hostname : db, port: 5432
-   
+
 12. fill the rest according to this setup
 
 ```yaml
-   db:
-    container_name: postgres
-    image: postgres:17-alpine
-    environment:
-      POSTGRES_USER: "postgres"
-      POSTGRES_PASSWORD: "postgres"
-      POSTGRES_DB: "ny_taxi"
-    ports:
-      - "5433:5432"
-    volumes:
-      - vol-pgdata:/var/lib/postgresql/data
+db:
+  container_name: postgres
+  image: postgres:17-alpine
+  environment:
+    POSTGRES_USER: "postgres"
+    POSTGRES_PASSWORD: "postgres"
+    POSTGRES_DB: "ny_taxi"
+  ports:
+    - "5433:5432"
+  volumes:
+    - vol-pgdata:/var/lib/postgresql/data
 ```
-   
+
 13. The database should work, if that database work, it means you input the right hostname and port for the question
