@@ -34,7 +34,7 @@ For example:
 SELECT column_name
 FROM table_1 AS abbreviation_table_1
 JOIN table_2 AS abbreviation_table_2 ON abbreviation_table_1.id = abbreviation_table_2.id
-JOIN table_3 AS abbreviation_table_3 ON abbreviation_table_1.id = abbreviation_table_2.id
+JOIN table_3 AS abbreviation_table_3 ON abbreviation_table_1.id = abbreviation_table_3.id
 WHERE condition;
 ```
 
@@ -46,7 +46,7 @@ For example:
 SELECT MAX(column_name)
 FROM table_1 AS abbreviation_table_1
 JOIN table_2 AS abbreviation_table_2 ON abbreviation_table_1.id = abbreviation_table_2.id
-JOIN table_3 AS abbreviation_table_3 ON abbreviation_table_1.id = abbreviation_table_2.id
+JOIN table_3 AS abbreviation_table_3 ON abbreviation_table_1.id = abbreviation_table_3.id
 WHERE TO_CHAR(datetime column, format datetime) = condition;
 GROUP BY column_name
 ```
