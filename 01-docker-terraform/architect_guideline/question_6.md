@@ -1,4 +1,4 @@
-## Understanding Join, Self Join, MAX(), GROUP BY AND DATETIME HANDLING
+## Understanding Join, Multiple Join, MAX(), GROUP BY AND DATETIME HANDLING
 
 Question 6 : For the passengers picked up in the zone named "East Harlem North" in November 2025, which was the drop off zone that had the largest tip? 
 
@@ -23,8 +23,12 @@ If so, for the first step, make sure that the table for the data already exists 
 
 To start querying, select the query tools menu at the top of the menu list, making sure that the query menu appears on the pgadmin display.
 
-<img width="299" height="88" alt="image" src="https://github.com/user-attachments/assets/414abb23-d25a-4499-bcb5-b1a74b6765ee" />
-
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/b3dc93e7-221d-4e99-b845-cfe46045fbb6" />
+
+Alright, now let's get into the main discussion. As stated in the question above, we have to find the highest tip amount among the drop-off zones where the passenger was picked up from the “East Harlem North” zone in November 2025. To do this, we can use multiple joins and max() in SQL.
+
+Multiple joins is a process where we will perform multiple joins on the same table.
+
+For example:
 
 
