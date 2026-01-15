@@ -30,5 +30,7 @@ Alright, now let's get into the main discussion. As stated in the question above
 Multiple joins is a process where we will perform multiple joins on the same table.
 
 For example:
-
+'''sql
+asdawdas
+'''
 
