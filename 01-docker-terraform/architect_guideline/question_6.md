@@ -16,5 +16,6 @@ For csv file, you can follow tutorial in the link below:
 ### Guideline Tips And Trick
 If you are reading this, I assume you have finished uploading the Green taxi trips data for November 2025 and Taxi zone to Postgresql.
 If so, for the first step, make sure that the table for the data already exists in the Postgresql database.
+
 <img width="299" height="88" alt="image" src="https://github.com/user-attachments/assets/9e070176-b3e0-4087-bc3b-b07806e61173" />
 
