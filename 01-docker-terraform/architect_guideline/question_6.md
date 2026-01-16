@@ -51,7 +51,14 @@ WHERE TO_CHAR(datetime column, format datetime) = condition;
 GROUP BY column_name
 ```
 
+Once we understand the thought process and concept of the solution method, all we need to do is execute it.
+
+As shown in the table above, we have the green_taxi_trips_november_2025 and taxi_zone tables. The green taxi table stores trip data such as pickup location ID “PULocationID,” drop-off location ID “DOLocationID,” and the amount of tip per trip. However, we do not know which zone these IDs refer to, so to find out the zone for each ID, we need information from the zone table.
+
+Multiple joins will be the intermediary method for obtaining this information. Remember that multiple joins can refer not only to different tables but also to the same table as long as the table abbreviations are different and each table has a connecting parameter, such as “LocationID” in the zone table with ‘PULocatonID’ and “DOLocatonID” in the green taxi table.
+
 References:
 1. https://www.geeksforgeeks.org/sql/multiple-joins-in-sql/
 2. https://www.w3schools.com/sql/sql_groupby.asp
 3. https://www.datacamp.com/doc/postgresql/to_char
+4. https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_green.pdf
