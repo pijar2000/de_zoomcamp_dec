@@ -18,6 +18,8 @@ Guidline by pijar
 
 For the trips in November 2025 (lpep_pickup_datetime between '2025-11-01' and '2025-12-01', exclusive of the upper bound), how many trips had a `trip_distance` of less than or equal to 1 mile?
 
+- You can analyze it with SQL inside database or simply pandas in python notebook
+ 
 - For this question, the fastest analysis is using pandas
 - Start from anlyze which column you need such as
 
