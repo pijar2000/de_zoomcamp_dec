@@ -19,6 +19,18 @@ Guidline by pijar
 For the trips in November 2025 (lpep_pickup_datetime between '2025-11-01' and '2025-12-01', exclusive of the upper bound), how many trips had a `trip_distance` of less than or equal to 1 mile?
 
 - You can analyze it with SQL inside database or simply pandas in python notebook
+
+If you want to analyze it in database, the easiest way is to load the paquet file type into df in python notebook and convert into csv, then load the data to database, eg:
+
+```python
+import pandas as pd
+
+df_parquet = pd.read_parquet("green_tripdata_2025-11.parquet")
+
+df_parquet.to_csv("green_tripdata_2025-11.csv", index=False)
+```
+
+## BACK TO THE QUESTION
  
 - For this question, the fastest analysis is using pandas
 - Start from anlyze which column you need such as
