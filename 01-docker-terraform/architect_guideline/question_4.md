@@ -1,6 +1,7 @@
 ## Question 4. Longest trip for each day
 Guideline by pijar
-
+- You can analyze it with SQL inside database or simply pandas in python notebook
+- For this question, the fastest analysis is using pandas
 - You need to load the data from question 3, check the question_3 note
 
 Which was the pick up day with the longest trip distance? Only consider trips with `trip_distance` less than 100 miles (to exclude data errors).
