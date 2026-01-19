@@ -30,6 +30,9 @@ df_parquet = pd.read_parquet("green_tripdata_2025-11.parquet")
 df_parquet.to_csv("green_tripdata_2025-11.csv", index=False)
 ```
 
+- Don't forget to check the column type of the data with pandas first and make it in database with `CREATE TABLE`
+
+
 ## BACK TO THE QUESTION
  
 - For this question, the fastest analysis is using pandas
