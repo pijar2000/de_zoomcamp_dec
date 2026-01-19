@@ -32,7 +32,11 @@ print(df.dtypes)
 - If the corresponding column in datetime already you're good to go
 
 ```python
-df["lpep_pickup_datetime"] >= "2025-11-01") & (df["lpep_pickup_datetime"] < "2025-12-01"
+# date filter
+filter_date = (df["lpep_pickup_datetime"] >= "2025-11-01") & (df["lpep_pickup_datetime"] < "2025-12-01")
+
+# distance filter
+filter_distance = df["trip_distance"] <= 1
 ```
 
 - This is one of method to determine which data coverage you should take 
