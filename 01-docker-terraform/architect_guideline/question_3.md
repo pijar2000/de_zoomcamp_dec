@@ -6,12 +6,14 @@ Download the green taxi trips data for November 2025:
 ```bash
 wget https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-11.parquet
 ```
+Green taxi trips data for November 2025: https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-11.parquet
 
 You will also need the dataset with zones: (This is csv type file)
 
 ```bash
 wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/misc/taxi_zone_lookup.csv
 ```
+Taxi zone: https://github.com/DataTalksClub/nyc-tlc-data/releases/download/misc/taxi_zone_lookup.csv
 
 ## Question 3. Counting short trips
 Guidline by pijar
