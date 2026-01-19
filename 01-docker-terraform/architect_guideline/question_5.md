@@ -1,6 +1,8 @@
 ## Question 5. Biggest pickup zone
 
 Guideline by pijar
+- You can analyze it with SQL inside database or simply pandas in python notebook
+- For this question, the fastest analysis is using pandas
 - You need to load the data from question 3, check the question_3 note
 
 Which was the pickup zone with the largest `total_amount` (sum of all trips) on November 18th, 2025?
