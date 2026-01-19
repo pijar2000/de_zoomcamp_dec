@@ -31,12 +31,16 @@ print(df.dtypes)
 - You can determine what you need to solve
 - If the corresponding column in datetime already you're good to go
 
+
+- This is one of method to determine which data coverage you should take, in this case filter by date and by distance, one by one
 ```python
 # date filter
 filter_date = (df["lpep_pickup_datetime"] >= "2025-11-01") & (df["lpep_pickup_datetime"] < "2025-12-01")
 
 # distance filter
 filter_distance = df["trip_distance"] <= 1
+
+df_filter = df[mask_date & mask_distance]
 ```
 
-- This is one of method to determine which data coverage you should take 
+- you can count the rest by various method, for example `count` function 
