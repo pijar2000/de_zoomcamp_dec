@@ -32,7 +32,7 @@ pgdatabase:
 
 - After you done with your kestra set-up you shoul ingest the remaining data of `ny_taxi` from 2019 to 2021, you can modified the flow corresponding to your needs
 
-- the flow name is `05_postgres_taxi.yaml` load the yaml to flow managament with create flow
+- the flow name is `05_postgres_taxi.yaml` paste the yaml content to flow code with create flow
 
 <img width="565" height="300" alt="Screenshot 2026-01-28 235904" src="https://github.com/user-attachments/assets/438f0e0f-f007-4fa0-8ecb-143141c65396" />
 
