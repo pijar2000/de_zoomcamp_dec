@@ -34,4 +34,7 @@ variables:
 ```
 - After that you should look onto the Gantt section, you will see the size of the file
 
+<img width="1341" height="826" alt="Screenshot 2026-01-29 010620" src="https://github.com/user-attachments/assets/365b510e-a8c1-4506-a8e9-6e0ee9ae68ed" />
+
+
 
