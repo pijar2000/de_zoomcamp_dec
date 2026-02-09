@@ -56,3 +56,32 @@ SELECT COUNT(*) FROM `de-zoomcamp-2026-484615.nytaxi.yellow_tripdata_2024_homewo
 - 85,431,289
 
 **Answer:** `20,332,093`
+
+---
+
+## Question 4:
+Write a query to retrieve the PULocationID from the table (not the external table) in BigQuery. Now write a query to retrieve the PULocationID and DOLocationID on the same table. Why are the estimated number of Bytes different?
+
+### Query Function:
+**Query**
+```sql
+# 1. Write a query to retrieve PULocationIDs data
+SELECT PULocationID 
+FROM `zoomcamp-dw-486814.nytaxi.yellow_tripdata_2024`;
+
+# 2. Write a query to retrieve PULocationIDs and DOLocationID data
+SELECT PULocationID, DOLocationID
+FROM `zoomcamp-dw-486814.nytaxi.yellow_tripdata_2024`;
+```
+
+**Query Result**
+1. Query to retrieve PULocationIDS data will process 155.12 MB when run.
+2. Query to retrieve PULocationIDS and DOLocationID data will process 310.24 MB when run.
+
+### Explanation
+The estimated number of bytes is different because BigQuery is Columnar Storage Architecture or columnar database and only scans the columns referenced in the query. Traditional databases (like PostgreSQL or MySQL) usually store data in rows. If you want one piece of information from a row, the database often has to "read" the entire row into memory to find it. BigQuery does the opposite. It stores each column in its own separate file or block of memory.
+   - Efficiency: When you run the first query, BigQuery only opens the file containing `PULocationID`. It completely ignores all other columns (like VendorID,    passenger_count, etc.).
+   - Additive Cost: When you add `DOLocationID` to your SELECT statement, BigQuery now has to open and scan a second set of files. Since you are reading more physical data off the disk, the "Bytes Processed" increases proportionally.
+   - Pricing Impact: This is exactly why `SELECT *` is considered a "sin" in BigQuery; it forces the engine to scan every single column file in the table, maximizing your costs.
+
+**Answer:** `BigQuery is a columnar database, and it only scans the specific columns requested in the query. Querying two columns (PULocationID, DOLocationID) requires reading more data than querying one column (PULocationID), leading to a higher estimated number of bytes processed.`
